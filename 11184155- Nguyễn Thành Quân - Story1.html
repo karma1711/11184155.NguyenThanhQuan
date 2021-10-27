@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Story</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    html{
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:16px;
+    }
+    body{
+            width: 1800px;
+            margin-left: 60px;;
+            padding: 0;
+            background:black;
+    }
+    #header{
+        width: 1800px;
+        height:80px;
+        float:left;
+        background:black;
+    }
+    #header .list>ul{
+        list-style-type: none;
+    }
+    #header .list>ul>li{
+        margin-top: 0px;
+        line-height: 80px;
+        float:left;     
+        margin-left:100px; 
+    }
+    #header .list>ul>li:hover{
+        position: relative;
+        animation: slide 1s;
+        animation-timing-function: ease-in;
+    }
+    #header .list>ul>li:hover >a{
+      color: grey;
+    }
+    @keyframes slide {
+            0%{bottom:-3px;}
+            20%{bottom:2.5px;}
+            40%{bottom:-2.5px;}
+            60%{bottom:1.5px;}
+            80%{bottom:-1.5px}
+            100%{bottom:0px}
+    }
+    #header .list>ul>li>a{
+        text-decoration: none;
+        color:white;
+        font-weight: bold;;
+        font-size:1rem;
+        text-transform: uppercase;
+    }
+    #header .list>ul>li:hover{
+        animation: slide 1s;
+        background: #999;
+        line-height:60px;
+    }
+    #header .list>ul>li:hover >a{
+      color: black;
+    }
+    @keyframes slide {
+        0%{bottom:-3px;}
+        20%{bottom:2.5px;}
+        40%{bottom:-2.5px;}
+        60%{bottom:1.5px;}
+        80%{bottom:-1.5px}
+        100%{bottom:0px}
+    }
+    #header .list>ul>li>ul{
+      list-style-type:none;
+      display: none;
+      width:300px;
+      position: absolute;
+    }
+    #header .list>ul>li>ul li{
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid black;
+      background: #999;
+      text-align: left;
+    }
+    #header .list>ul>li>ul>li>a{
+      text-decoration: none;
+      color:white;
+      font-weight: bold;;
+      font-size:1rem;
+      margin-left: 5px;
+    }
+    #header .list>ul>li:hover ul{
+      display:block;
+    }
+    #header .list>ul>li>ul li:hover a{
+      color:black;
+      opacity: 0.5;
+    }
+    #header .smallpic{
+        float: right;
+        margin-top: 15px;
+        margin-right :50px;
+    }
+    #header .smallword{
+        float: right;
+        margin-top: 23px;
+        margin-right :10px;
+    }
+    #header .title{
+        float:left;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    #header .title>a{
+        text-decoration: none;
+        color:grey;
+        font-size: 60px;
+        font-weight: bold;
+        margin: 100px 0px 0px 20px
+    }
+    #content{
+        height: 950px;
+    }
+    #content .video{
+        float:left;
+        margin-left: 10px;
+        margin-top:100px;
+    }
+    #content .word1{
+        float:right;
+    }
+    #content .word1>p{
+        color:grey;
+        position:absolute;
+        font-weight: bold;
+        margin: 300px 100px 0px 30px;
+        font-size: 20px;
+    }
+    #footer{
+        height:200px;
+    }
+    #footer .footerpic{
+        margin-left:570px;
+        margin-top:0px;
+    }
+    #footer .footerpic>ul{
+      list-style-type: none;
+    }
+    #footer .footerpic>ul>li{
+      float:left;
+      margin-left:100px;
+      margin-top:0px;
+    }
+    #footer .footerword{
+      float:left;
+      margin-left: 290px;
+      margin-top:15px;
+    }
+    #footer .footerword>a{
+      text-decoration: none;
+      color:grey;
+      font-weight: bold;
+    }
+
+</style>
+<body>
+
+    <div id='header'>
+            <div class='list'>
+              <ul>
+                <li><a href="index.html" " >Home</a></li>
+                <li><a href=""">Story</a>
+                    <ul>
+                        <li><a href="11184155- Nguyễn Thành Quân - Story1.html">Venom</a></li>
+                        <li><a href="11184155- Nguyễn Thành Quân - Story2.html">Venom: Let There Be Carnage</a></li>
+                      </ul>
+                </li>
+                <li><a href="">Character
+                  <ul>
+                    <li><a href="">VENOM</a></li>
+                    <li><a href="">RIOT</a></li>
+                    <li><a href="">CARNAGE</a></li>
+                  </ul>
+                </a></li>
+                <li><a href="https://www.sonypictures.com/movies/venomlettherebecarnage" target="blank"">About</a></li>
+              </ul>
+            </div>
+              <div class="smallpic">
+                <a href=""><img src="small icon.png" width="50px" height="50px" alt=""></a>
+              </div>
+              <div class="smallword">
+                <a href=""><img src="smallword.jpg" width="50px" height="30px" alt=""></a>
+              </div>
+              <div class="title">
+                <a href=""> Venom </a>
+            </div>
+    </div>  
+    <div id='content'>
+        <div class='video'>
+            <video width="1000px" height="700px" controls>
+          <source src="VENOM 1 - Official Trailer (HD).mp4" type="video/mp4">
+          <source src="VENOM 1 - Official Trailer (HD).mp4" type="video/ogg">
+        </video>
+        <div class='word1'>
+            <p> VENOM <br>
+                2018 | ACTION, SCI-FI, SUPERHERO<br>
+                The evolution story of Marvel’s most enigmatic, complex and badass character – Venom! Eddie Brock (Tom Hardy) is a broken man after he loses everything including his job and fiancée. Just when his life is at its lowest, he becomes host to an alien symbiote which results in extraordinary superpowers - transforming him into Venom. Will these powers be enough for this new lethal protector to defeat great evil forces, especially against the far stronger and more weaponized symbiote rival, Riot? </p>
+        </div>
+        </div>
+    </div>
+    <div id='footer'>
+            <div class="footerpic">
+              <ul>
+                <li><a href=""><img src="footerpic1.jpg" height="70px" width="85px" alt=""></a></li>
+                <li><a href=""><img src="footerpic2.jpg" height="70px" width="85px" alt=""></a></li>
+                <li><a href=""><img src="footerpic3.jpg" height="70px" width="85px" alt=""></a></li>
+            </ul>
+            </div>
+            <div class="footerword">
+             <a href=""> © 2018 Columbia Pictures Industries, Inc. and Tencent Pictures (USA) LLC. All Rights Reserved. | MARVEL and all related character names: © & ™ 2019 MARVEL.</a>
+            </div>
+    </div>
+</body>
+</html>

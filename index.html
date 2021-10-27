@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venom</title>
+    <style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    html{
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:16px;
+    }
+    body{
+            width: 1800px;
+            margin-left: 60px;;
+            padding: 0;
+            background:black;
+    }
+    #header{
+        width: 1800px;
+        height:80px;
+        float:left;
+        background:black;
+        
+    }
+    #header .list>ul{
+        list-style-type: none;
+    }
+    #header .list>ul>li{
+        margin-top: 0px;
+        line-height: 80px;
+        float:left;     
+        margin-left:100px; 
+        position: relative;
+    }
+    #header .list>ul>li>a{
+      text-decoration: none;
+      color:white;
+      font-weight: bold;;
+      font-size:1rem;
+      text-transform: uppercase;
+    }
+    #header .list>ul>li:hover{
+        animation: slide 1s;
+        background: #999;
+        line-height:60px;
+    }
+    #header .list>ul>li:hover >a{
+      color: black;
+    }
+    @keyframes slide {
+        0%{bottom:-3px;}
+        20%{bottom:2.5px;}
+        40%{bottom:-2.5px;}
+        60%{bottom:1.5px;}
+        80%{bottom:-1.5px}
+        100%{bottom:0px}
+    }
+    #header .list>ul>li ul{
+      list-style-type:none;
+      display: none;
+      width:300px;
+      position: absolute;
+    }
+    #header .list>ul>li ul li{
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid black;
+      background: #999;
+      text-align: left;
+    }
+    #header .list>ul>li ul li a{
+      text-decoration: none;
+      color:white;
+      font-weight: bold;;
+      font-size:1rem;
+      margin-left: 5px;
+    }
+    #header .list>ul>li:hover ul{
+      display:block;
+    }
+    #header .list>ul>li ul li:hover a{
+      color:black;
+      opacity: 0.5;
+    }
+
+    #header .smallpic{
+        float: right;
+        margin-top: 15px;
+        margin-right :50px;
+    }
+    #header .smallword{
+        float: right;
+        margin-top: 23px;
+        margin-right :10px;
+    }
+    #title{
+        float:left;
+        margin-left: 0px;
+    }
+    #para{
+        background: #666666;
+        height:30px;
+        width:1800px;
+        float:left;
+        overflow: hidden;
+    }
+    #para>a{
+      line-height: 30px;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+      font-size:15px;
+      position: relative;
+      animation: runningaction 150s infinite;
+    }
+    @keyframes runningaction {
+      0%{left:100%;}
+      100%{left:-1000%;}
+    }
+    #content{
+      height:950px;
+    }
+    #content .video{
+        margin-top: 50px;
+        margin-left: 50px;
+        float:left;
+    }
+    #content .poster1{
+        margin-top: 40px;
+        margin-right:70px;
+        float:right;
+    }
+    #footer{
+        height:200px;
+    }
+    #footer .footerpic{
+        margin-left:570px;
+        margin-top:0px;
+    }
+    #footer .footerpic>ul{
+      list-style-type: none;
+    }
+    #footer .footerpic>ul>li{
+      float:left;
+      margin-left:100px;
+      margin-top:0px;
+    }
+    #footer .footerword{
+      float:left;
+      margin-left: 290px;
+      margin-top:15px;
+    }
+    #footer .footerword>a{
+      text-decoration: none;
+      color:grey;
+      font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+  <div id='header'>
+    <div class='list'>
+      <ul>
+        <li><a href="index.html" target="self" >Home</a></li>
+        <li><a href="">Story</a>
+            <ul>
+              <li><a href="11184155- Nguyễn Thành Quân - Story1.html">Venom</a></li>
+              <li><a href="11184155- Nguyễn Thành Quân - Story2.html">Venom: Let There Be Carnage</a></li>
+            </ul>
+        </li>
+        <li><a href="">Character</a>
+            <ul>
+              <li><a href="">VENOM</a></li>
+              <li><a href="">RIOT</a></li>
+              <li><a href="">CARNAGE</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.sonypictures.com/movies/venomlettherebecarnage" target="blank"">About</a></li>
+      </ul>
+    </div>
+      <div class="smallpic">
+        <a href=""><img src="small icon.png" width="50px" height="50px" alt=""></a>
+      </div>
+      <div class="smallword">
+        <a href=""><img src="smallword.jpg" width="50px" height="30px" alt=""></a>
+      </div>
+  </div>
+
+  <div id="title">
+    <a href=""><img src="title.jpg" height="200px" width="1800px" alt=""</a>
+  </div>
+
+  <div id="para">
+    <a href="">
+      VENOM: LET THERE BE CARNAGE | 2021 | SUPERHERO | Tom Hardy returns to the big screen as the lethal protector Venom, one of MARVEL’s greatest and most complex characters. Directed by Andy Serkis, written by Kelly Marcel with the story by Tom Hardy & Marcel, the film also stars Michelle Williams, Naomie Harris and Woody Harrelson, in the role of the villain Cletus Kasady/Carnage.
+    </a>
+</div>
+  <div id='content'>
+      <div class='video'>
+        <video width="100%" height="500px" controls>
+          <source src="VENOM- LET THERE BE CARNAGE - Official Trailer 2 (HD).mp4" type="video/mp4">
+          <source src="VENOM- LET THERE BE CARNAGE - Official Trailer 2 (HD).mp4" type="video/ogg">
+        </video>
+      </div>
+      <div class="poster1">
+        <a href=""><img src="poster1.png" height="500px" width="750px" alt=""></a>
+      </div>
+  </div>
+    
+  <div id='footer'>
+      <div class="footerpic">
+        <ul>
+          <li><a href=""><img src="footerpic1.jpg" height="70px" width="85px" alt=""></a></li>
+          <li><a href=""><img src="footerpic2.jpg" height="70px" width="85px" alt=""></a></li>
+          <li><a href=""><img src="footerpic3.jpg" height="70px" width="85px" alt=""></a></li>
+      </ul>
+      </div>
+      <div class="footerword">
+       <a href=""> © 2018 Columbia Pictures Industries, Inc. and Tencent Pictures (USA) LLC. All Rights Reserved. | MARVEL and all related character names: © & ™ 2019 MARVEL.</a>
+      </div>
+  </div>
+</body>
+</html>
